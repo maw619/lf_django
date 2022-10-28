@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>{{title}}</title>
+        <!-- MDB icon -->
+        <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+        <!-- Datatable -->
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/4.0.0/material-components-web.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.material.min.css">
+        <!-- MDB -->
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}" />
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+        
+      
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+
+</style>
+</head>
+<body  style="background:rgba(51,45,45,var(--mdb-bg-opacity))!important;">
+    <!-- Navbar -->
+    <div style="background:black;">
+      <div style="float:right;" style="background:black;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 3%;">
+          <div class="d-flex align-items-center">
+            <button type="button" class="btn btn-link px-3 me-2">
+              Login
+            </button> 
+            <button type="button" class="btn btn-primary me-3">
+              Register
+            </button>
+           
+          </div>
+        </nav>
+      </div>
+      <div style="float:left;"></div>
+    </div>
+
+<!-- Navbar -->
+        <iframe src="https://www.lfjennings.com/" style="height:100vh; width:100vw; background-color:black;"></iframe>
+
+
+
+     <!-- End your project here-->
+     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.material.min.js"></script>
+     <!-- MDB -->
+     {% load static %}
+     <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+</body>
+</html>

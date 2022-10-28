@@ -1,0 +1,47 @@
+{% extends 'main/base.html' %} {% block content %}
+<!-- Add button -->
+<div class="row">
+  <div class="col-md-9">
+    <button
+      type="button"
+      class="btn btn-primary btn-sm my-3"
+      data-mdb-ripple-color="#ffffff"
+      style="background-color: #b70b0b"
+    >
+      ADD PROJECT <i class="fas fa-add ms-1"></i>
+    </button>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+<div class="col-md-12">
+  <table id="example" class="mdl-data-table" style="width: 100vh">
+    <thead>
+      <tr>
+        <th>Project</th>
+        <th>Address</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for x in data %}
+      <tr>
+        <td>{{ x.pr_desc }}</td>
+        <td>{{ x.pr_address }}</td>
+        <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Project</th>
+        <th>Address</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+{% endblock content %}

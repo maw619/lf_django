@@ -1,0 +1,58 @@
+{% extends 'main/base.html' %} {% block content %}
+
+
+  <!-- Add button -->
+  <div class="row my-2">
+    <div class="col-md-9">
+      <button type="button" 
+      class="btn btn-primary btn-sm my-3" 
+      data-mdb-ripple-color="#ffffff" 
+      style="background-color:#b70b0b"> ADD REPORTS <i class="fas fa-add ms-1"></i></button>
+    </div>
+    <div class="col-md-3">
+
+    </div>
+  </div>
+  <div class="col-md-12">
+
+
+  <table id="example" class="mdl-data-table" style="width: 100%;">
+
+    <thead>
+      <tr>
+        <th>Report Date</th>
+        <th>Project</th>
+        <th>Reported By</th>
+        <th>Supervisor</th>
+        <th>Description</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for x in data %}
+      <tr>
+        <td>{{ x.rep_yyyymmdd }}</td>
+        <td>{{ x.rep_name }}</td>
+        <td>{{ x.emp_name }}</td>
+        <td>{{ x.rep_user_name }}</td>
+        <td>{{ x.rep_desc }}</td>
+        <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Report Date</th>
+        <th>Project</th>
+        <th>Reported By</th>
+        <th>Supervisor</th>
+        <th>Description</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+{% endblock content %}

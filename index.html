@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <style>
+      #logo{
+        max-height: 100px;
+      }
+      .table-responsive{
+        width:100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="white-space: nowrap;"><img src="./img/jennings.png" style="max-height: 75px;" alt="" class="img-fluid">L.F. JENNINGS</div>
+    <!-- Start your project here-->
+    <!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <!-- <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img
+          src="./img/jennings.png"
+          height="35"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      </a> -->
+      <!-- Left links -->
+      <div class="dropdown">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <ul class="navbar-nav">
+            
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Admin
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#">Employees</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Charges</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Certifications</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reports</a>
+        </li>
+      </ul>
+      </div>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center">
+      <!-- Icon -->
+      <a class="text-reset me-3" href="#">
+        <!-- <i class="fa fa-sign-in"></i> -->
+      </a>
+
+      <!-- Logout -->
+      <a>Logout <i class="fa fa-sign-out"></i></a>
+      <!-- Avatar -->
+      <div class="dropdown">
+        <a
+          class="dropdown-toggle d-flex align-items-center hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuAvatar"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuAvatar"
+        >
+          <li>
+            <a class="dropdown-item" href="#">My profile</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Settings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right elements -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+<!-- Navbar -->
+   
+     
+
+
+
+<div class="row my-2">
+  <div class="col-md-9">
+    <button type="button" class="btn btn-primary    btn-sm" data-mdb-ripple-color="#ffffff" style="background-color:#b70b0b"> ADD PROJECT <i class="fas fa-add ms-1"></i></button>
+  </div>
+  <div class="col-md-3">
+    <div class="input-group">
+      <div class="form-outline">
+      <input type="search" id="form1" class="form-control" />
+      <label class="form-label" for="form1">Search</label>
+      </div>
+      <button type="button" class="btn btn-primary">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+  
+  </div>
+</div>
+
+
+       
+        <div class="table-responsive">
+          <table class="table table-striped table-hover table-bordered ">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Lorem</th>
+                <th scope="col">Ipsum</th>
+                <th scope="col">Dolor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Sit</td>
+                <td>Amet</td>
+                <td>Consectetur</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Adipisicing</td>
+                <td>Elit</td>
+                <td>Sint</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Hic</td>
+                <td>Fugiat</td>
+                <td>Temporibus</td>
+              </tr>
+            </tbody>
+        
+          </table>
+        </div>
+      </div>
+    
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>

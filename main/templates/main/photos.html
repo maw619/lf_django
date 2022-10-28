@@ -1,0 +1,58 @@
+{% extends 'main/base.html' %} {% block content %}
+
+<!-- Add button -->
+<div class="row my-2">
+  <div class="col-md-9">
+    <button
+      type="button"
+      class="btn btn-primary btn-sm my-3"
+      data-mdb-ripple-color="#ffffff"
+      style="background-color: #b70b0b"
+    >
+      ADD PHOTO <i class="fas fa-add ms-1"></i>
+    </button>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+<div class="col-md-12">
+  <table class="table table-striped" style="width: 100%; border:1px solid grey">
+    <thead>
+      <tr>
+        <th>Observations</th>
+        <th>Description</th>
+        <th>Photo</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for x in data %}
+      <tr>
+        <td></td>
+        <td>{{ x.ph_desc }}</td>
+        <td>
+          <img
+            src="{{ x.ph_link }}"
+            alt=""
+            class="img-fluid"
+            style="height: 40%"
+          />
+        </td>
+        <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Observations</th>
+        <th>Description</th>
+        <th>Photo</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+{% endblock content %}

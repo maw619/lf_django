@@ -1,0 +1,44 @@
+{% extends 'main/base.html' %} {% block content %}
+
+  <!-- Add button -->
+  <div class="row my-2">
+    <div class="col-md-9">
+      <button type="button" class="btn btn-primary btn-sm my-3" 
+      data-mdb-ripple-color="#ffffff" 
+      style="background-color:#b70b0b"> ADD CERTIFICATION <i class="fas fa-add ms-1"></i></button>
+    </div>
+    <div class="col-md-3">
+
+    </div>
+  </div>
+
+  <table
+    id="example"
+    class="mdl-data-table"
+    style="width: 100%;"
+  >
+    <thead>
+      <tr>
+        <th>Certifications</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+      </tr>
+  
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Certifications</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </tfoot>
+  </table>
+
+{% endblock content %}

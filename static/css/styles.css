@@ -1,0 +1,31 @@
+#logo{
+    max-height: 100px;
+  }
+  .table-responsive{
+    width:100%;
+  }
+  .table{
+   width: auto;
+  }
+  
+  
+  #example_wrapper{
+    width: 100%;
+  }
+
+  .fa-edit{
+    color:#6200ee;
+  }
+
+  .fa-trash{
+    color:firebrick;
+  }
+
+  .dataTables_wrapper{
+    width: 100%;
+  }
+
+ td{
+  max-width: 300px;
+  word-wrap: break-word;
+ }

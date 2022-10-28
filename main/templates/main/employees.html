@@ -1,0 +1,54 @@
+{% extends 'main/base.html' %} {% block content %}
+
+<div class="w-100 p-3">
+  <!-- Add button -->
+  <div class="row my-2">
+    <div class="col-md-9">
+      <button
+        type="button"
+        class="btn btn-primary btn-sm my-3"
+        data-mdb-ripple-color="#ffffff"
+        style="background-color: #b70b0b"
+      >
+        ADD EMPLOYEEE <i class="fas fa-add ms-1"></i>
+      </button>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+
+  <table id="example" class="mdl-data-table" style="width: 100%">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Charge</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for x in data %}
+      <tr>
+        <td>{{ x.emp_name }}</td>
+        <td>{{ x.emp_email }}</td>
+        <td>{{ x.emp_phone }}</td>
+        <td>?</td>
+        <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Charge</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+{% endblock content %}

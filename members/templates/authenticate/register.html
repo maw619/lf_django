@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Home Page{% endblock title %}
+
+{% block content %}
+
+<div class="d-flex align-items-center justify-content-center">
+<form method="POST"  style="width:70%;">
+    <p>Register</p>
+    {% csrf_token %}
+    {% for x in form %}
+    <div class="form-outline mb-2">
+        <label class="form-label" for="form5Example2" name="password">{{ x.label }}</label>
+        {{ x }}
+    </div>
+    {% endfor %}
+    <button type="submit" class="btn btn-primary btn-block mb-4">Login</button>
+
+    <p class="mt-3"><i>Already have an account? Log in </i><a href="{% url 'login' %}">here</a></p>
+
+</form>
+
+</div>
+
+{% endblock content %}
